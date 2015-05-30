@@ -1,15 +1,15 @@
 ; boot.asm
 ; NASM
 
-; Data (512 bytes)
-; 1. Fill up 512 bytes with zeros
-; 2. Boot signature 0xAA55
-
 ; Code
 ; 1. Clear the interrupts flag
 ; 2. Hanging loop
 
-    cli ; Clear interrupt flags
+; Data (512 bytes)
+; 1. Fill up 510 bytes with zeros
+; 2. And two last bytes with Boot signature 0xAA55
+
+    cli
 hang:
     jmp hang
 

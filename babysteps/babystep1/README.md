@@ -14,8 +14,11 @@ This code is the smallest possible example of booting code from a floppy. The CP
 
 ### Creating disk image
 
-The code is assembled in NASM and copied to floppy using partcopy,dd, or debug (Windows). Then you simply boot from the /dev/fd0 (floppy). 
+The code is assembled in NASM and copied to floppy using partcopy, dd, or debug (Windows). Then you simply boot from the /dev/fd0 (floppy). 
 
 	$ nasm boot.asm -f bin -o boot.bin
 	$ dd if=boot.bin of=/dev/fd0 
 
+### Reference
+
+- http://wiki.osdev.org/Babystep1

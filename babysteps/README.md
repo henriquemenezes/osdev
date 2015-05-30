@@ -17,6 +17,10 @@ How to create a basic kernel in assembly
 - Babystep8 - _32-bit printing_
 - Appendix A - _Additional information_
 
+### Installing Requirements
+
+	$ sudo apt-get install build-essential qemu nasm
+
 ### Reference
 
 - http://wiki.osdev.org/Category:Babystep
