@@ -24,7 +24,7 @@ It doesn't matter if you use 0000:7c00 or 07c0:0000, but if you use **ORG** you 
 
 By default, the offset is 0x0000, so if we need access the msg variable we must set the segment to 0x07c0. 
 
-```
+```nasm
    mov ax, 0x07c0 ; set 0x07c0 in ax
    mov ds, ax     ; data segment = 0x07c0
  
@@ -48,7 +48,7 @@ msg   db 'Hello World', 13, 10, 0
 
 But, if we use **ORG** directive we have set ds (segment) register to 0x0000 with ORG offset 0x7c00:
 
-```
+```nasm
 [ORG 0x7c00]
    xor ax, ax ; make it zero
    mov ds, ax ; data segment = 0x0000
@@ -75,7 +75,7 @@ msg   db 'Hello World', 13, 10, 0
 
 To reuse code often we write a separated code using **call** and **ret** instructions like the following.
 
-```
+```nasm
 [ORG 0x7c00]
    xor ax, ax 
    mov ds, ax
@@ -107,7 +107,7 @@ done:
 
 NASM macros let you pass a parameter to macro. Macros definition has to go before it`s being called.
 
-```
+```nasm
 %macro BiosPrint 1
     mov si, word %1
 ch_loop:lodsb
@@ -137,7 +137,7 @@ msg db 'Hello World', 13, 10, 0
 
 You can separate your long code in several files and include the files at the beging of your main code:
 
-```
+```nasm
 jmp main
  
 %include "othercode.inc"
