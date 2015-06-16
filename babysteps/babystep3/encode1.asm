@@ -1,5 +1,5 @@
-; nasm encode.asm -f bin -o encode.bin
-; hd encode.bin
+; nasm encode1.asm -f bin -o encode1.bin
+; hd encode1.bin
  
     mov cx, 0xFF
     times 510-($-$$) db 0

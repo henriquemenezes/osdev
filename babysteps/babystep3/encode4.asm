@@ -1,5 +1,5 @@
 ; nasm encode4.asm -f bin -o encode4.bin
-; hd encode.bin
+; hd encode4.bin
 
 ; Addresses
 ; Address encoding is a bit more complicated 
