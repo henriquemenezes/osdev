@@ -32,7 +32,7 @@ db 0x55
 db 0xAA
 ```
 
-Results in:
+Result of `hd encode1.bin`:
 
 ```
 00000000  b9 ff 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
