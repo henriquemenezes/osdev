@@ -41,7 +41,7 @@ Result of `hd encode1.bin`:
 000001f0  00 00 00 00 00 00 00 00  00 00 00 00 00 00 55 aa  |..............U.|
 ```
 
-Look the MOV opcode in [Instruction Format](http://www.baldwin.cx/386htm/s17_02.htm) and [MOV opcode](http://www.baldwin.cx/386htm/s17_02.htm):
+Look the MOV opcode in [Instruction Format](http://www.baldwin.cx/386htm/s17_02.htm) and [MOV opcode](http://www.baldwin.cx/386htm/MOV.htm):
 
 | Opcode  | Instruction      | Clocks      | Description                     |
 |---------|------------------|-------------|---------------------------------|
@@ -70,4 +70,4 @@ Where:
 
 + http://ref.x86asm.net/coder32.html
 + http://www.baldwin.cx/386htm/s17_02.htm
-+ http://www.baldwin.cx/386htm/s17_02.htm
++ http://www.baldwin.cx/386htm/MOV.htm
