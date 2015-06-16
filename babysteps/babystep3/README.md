@@ -41,7 +41,7 @@ Results in:
 000001f0  00 00 00 00 00 00 00 00  00 00 00 00 00 00 55 aa  |..............U.|
 ```
 
-Look MOV opcode in [http://www.baldwin.cx/386htm/s17_02.htm](Instruction Format) and [http://www.baldwin.cx/386htm/s17_02.htm](MOV opcode):
+Look the MOV opcode in [Instruction Format](http://www.baldwin.cx/386htm/s17_02.htm) and [MOV opcode](http://www.baldwin.cx/386htm/s17_02.htm):
 
 | Opcode  | Instruction      | Clocks      | Description                     |
 |---------|------------------|-------------|---------------------------------|
@@ -52,7 +52,7 @@ Register code:
 |   rb   |  rw    |   rd    |
 |--------|--------|---------|
 | AL = 0 | AX = 0 | EAX = 0 |
-| CL = 1 | CX = 1 | ECX = 1 |
+| CL = 1 | **CX = 1** | ECX = 1 |
 | DL = 2 | DX = 2 | EDX = 2 |
 | BL = 3 | BX = 3 | EBX = 3 |
 | AH = 4 | SP = 4 | ESP = 4 |
